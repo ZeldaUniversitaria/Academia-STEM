@@ -70,6 +70,15 @@ main.proyectos {
     background-color: #48cae4;
 }
 
+.boton-votar[disabled] {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+    border: none;
+    transition: 0.3s ease;
+}
+
+
 footer {
     background-color: #023e8a;
     color: white;
