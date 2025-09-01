@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bind_param("ss", $correo, $passwordEncriptada);
 
     if ($stmt->execute()) {
-        header("Location: index.html");
+        header("Location: login.php");
         exit();
     } else {
         echo "Error al registrar: " . $stmt->error;

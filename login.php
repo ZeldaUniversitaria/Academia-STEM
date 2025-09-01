@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$conexion = new mysqli("localhost:3307", "root", "", "usuarios");
+$conexion = new mysqli("fdb1034.awardspace.net", "4667283_usuarios", "zelda2323", "4667283_usuarios");
 
 if ($conexion->connect_error) {
     die("Error de conexión: " . $conexion->connect_error);
@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION["usuario_id"] = $usuario["id"];
             $_SESSION["correo"] = $usuario["correo"];
 
-            header("Location: index.html");
+            header("Location: index.php");
             exit();
         } else {
             $mensaje = "Contraseña incorrecta.";
